@@ -1,5 +1,5 @@
-# Optitrack Prime 13x System
-> :warning: This wiki is still very much work-in-progress. If you feel that some information are misleading or missing, feel free to create it and make a PR.
+# OptiTrack Prime 13x System
+> :warning: This wiki is still very much a work in progress. If you feel that some information is misleading or missing, feel free to create it and make a PR.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -54,7 +54,7 @@ The OptiTrack system is connected according to the figure below. The OptiTrack s
 
 
 ### Motive
-In the centre of the `Motive` software, you can see the view of the workspace, placement of the cameras in the space and the coordinate system. You can limit the workspace (the blue cube) so that only the markers in this area will be taken into account. On the bottom and right part of the window, you can see the connected cameras. Here you can control the cameras, turn them on/off, adjust parameters or change the mode/video type. For measurements use mode/video type `object`. To check the field of view of each camera use mode MJPEG. On the left side, you can see the calibration option.
+In the centre of the `Motive` software, you can see the view of the workspace, the placement of the cameras in the space and the coordinate system. You can limit the workspace (the blue cube) so that only the markers in this area will be taken into account. On the bottom and right part of the window, you can see the connected cameras. Here you can control the cameras, turn them on/off, adjust parameters or change the mode/video type. For measurements use mode/video type `object`. To check the field of view of each camera use mode MJPEG. On the left side, you can see the calibration option.
 
 <img src="./assets/images/motive.png"  alt="1" height = 420px >
 
@@ -66,7 +66,7 @@ The calibration starts with masking. The masking will mask all the unwanted refl
 
 <img src="./assets/images/calibration_wand.png"  alt="1" height = 240px >
 
-Next you need to set your ground plane(coordinate system) using calibration triangle by placing it where you want your ground plane.
+Next, you need to set your ground plane(coordinate system) using a calibration triangle by placing it where you want your ground plane.
 
 <img src="./assets/images/base_tool.png"  alt="1" height = 240px >
 
@@ -76,10 +76,10 @@ To use the data in ROS, MATLAB you have to stream the data from Motive to your P
 <img src="./assets/images/motive_settings.png"  alt="1" height = 560px >
 
 
-For ROS integration see  [this repo](https://github.com/ARM-Lab/mocap_optitrack). You need the set the same parameters in the `config/mocap.yaml` file as well. THESE PARAMETERS HAVE TO MATCH IN THE ROS AND MOTIVE (preferably use the ones in the figure above). For more details about the topics and functions see the GitHub repo.
+For ROS integration see  [this repo](https://github.com/ARM-Lab/mocap_optitrack). You need to set the same parameters in the `config/mocap.yaml` file as well. THESE PARAMETERS HAVE TO MATCH IN THE ROS AND MOTIVE (preferably use the ones in the figure above). For more details about the topics and functions see the GitHub repo.
 
 ## FAQ
-1. How to turn on/off the cameras ? 
+1. How to turn on/off the cameras? 
 - Turn on/off the Motive software and plug in/out the camera switch.
 
 2. I can't see my IP address in Motive settings(Local interface).
