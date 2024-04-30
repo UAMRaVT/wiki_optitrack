@@ -1,7 +1,16 @@
 # Optitrack Prime 13x System
 > :warning: This wiki is still very much work-in-progress. If you feel that some information are misleading or missing, feel free to create it and make a PR.
 
-## Mocap 101
+## Table of Contents
+- [Introduction](#introduction)
+- [Usage](#usage)
+  - [Network](#network)
+  - [Motive](#motive)
+  - [Calibration](#calibration)
+  - [Data streaming](#data-streaming)
+  - [FAQ](#faq)
+
+## Introduction
 OptiTrack is a motion capture system that can be used for tracking objects with a sub-millimetre accuracy. The system is based on the reflection of a specific wavelength of IR light emitted from cameras, which is reflected from the reflective markers, that can be seen in the figure below. The reflected light is picked up by cameras and markers 3D coordinates are triangulated in the Motive software. 
 
 <table>
@@ -51,7 +60,7 @@ In the centre of the `Motive` software, you can see the view of the workspace, p
 
 ### Calibration
 >[!Warning]
-> THE CALIBRATION SHOULD BE DONE EACH TIME A CAMERA HAS MOVED OR EACH TIME YOU START A NEW EXPERIMENT. 
+> The calibration should be done each time a camera has moved or each time you start a new experiment.
 
 The calibration starts with masking. The masking will mask all the unwanted reflections(do not put your marker into the workspace during calibration). If the masking is done you continue to wanding. If you start a new experiment or move the cameras you should use full measurement, if you continue your experiment and the cameras have not moved you should get away with the refine option. After you click start winding, you have to take the calibration wand and go to the workspace of the cameras and collect the samples with the wand. You can see on each camera if enough samples are collected. The wanding should take at least 5 min and cover areas you are going to use for measurement. After you are done, click on calculate and the software calculates the accuracy of your measurement.
 
